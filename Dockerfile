@@ -15,5 +15,7 @@ COPY . .
 # Exponer el puerto
 EXPOSE 8000
 
+RUN python manage.py collectstatic --noinput
+
 # Ejecutar gunicorn
 CMD ["gunicorn", "backend.wsgi:application", "--bind", "0.0.0.0:8000"]
