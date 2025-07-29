@@ -25,7 +25,11 @@ SECRET_KEY = "django-insecure-#)w#5nf5!1w1y-&u$nfz!6^a2032-9s9lnx-0d61&v3wokw%z!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "api-django.zeabur.app",  # <-- agrega tu dominio aquí
+]
 
 
 # Application definition
